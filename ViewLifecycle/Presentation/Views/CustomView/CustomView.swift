@@ -51,6 +51,7 @@ class CustomView: UIView {
         if sender.tag == 1 {
             self.topViewConstraint.constant = self.isExpanded ? 300 : 16
 
+            // Этот код избыточен, так как изменение константы констрейнта выше уже помечает вьюху как setNeedsLayout.
             UIView.animate(withDuration: 2.0) {
                 self.setNeedsLayout()
             } completion: { _ in
@@ -60,6 +61,7 @@ class CustomView: UIView {
         } else if sender.tag == 2 {
             self.topViewConstraint.constant = self.isExpanded ? 300 : 16
 
+            // Нет строчки self.setNeedsLayout(), так как изменение константы констрейнта выше уже помечает вьюху как setNeedsLayout.
             UIView.animate(withDuration: 2.0) {
                 self.layoutIfNeeded()
             } completion: { _ in
