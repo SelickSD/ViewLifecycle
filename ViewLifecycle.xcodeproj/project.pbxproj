@@ -51,6 +51,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C0EAA5427B5888B0058BF59 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3C0EAA5227B582BB0058BF59 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		3C0EAA5527B588930058BF59 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3C16156F27B1885B00CA2A88 /* ViewController.swift */,
+				3C8325FD27B195B5006724D7 /* SecondViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3C0EAA5627B5889E0058BF59 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3C0EAA5427B5888B0058BF59 /* TabBar */,
+				3C0EAA5527B588930058BF59 /* Controllers */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		3C16155F27B1885B00CA2A88 = {
 			isa = PBXGroup;
 			children = (
@@ -98,8 +124,7 @@
 		3C83260527B1B136006724D7 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				3C16156F27B1885B00CA2A88 /* ViewController.swift */,
-				3C8325FD27B195B5006724D7 /* SecondViewController.swift */,
+				3C0EAA5627B5889E0058BF59 /* Modules */,
 				3C83260427B1B126006724D7 /* Views */,
 			);
 			path = Presentation;
@@ -110,7 +135,6 @@
 			children = (
 				3C16156B27B1885B00CA2A88 /* AppDelegate.swift */,
 				3C16156D27B1885B00CA2A88 /* SceneDelegate.swift */,
-				3C0EAA5227B582BB0058BF59 /* TabBarController.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
